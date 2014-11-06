@@ -9,11 +9,11 @@ Getting Started
 
 __NPM__ ([What is NPM?](https://docs.nodejitsu.com/articles/getting-started/npm/what-is-npm) [What is Grunt?](http://gruntjs.com/))
 
-    npm install jquery-exists --save-dev
+    npm install jquery-exists
 
 __Bower__ ([What is Bower?](http://bower.io/))
 
-    bower install jquery-exists --save-dev
+    bower install jquery-exists
 
 __Download directly__ __(Do not link this directly on your site, the file is sent with a plain/text header and can cause loading problems)__
 

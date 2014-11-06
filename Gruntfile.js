@@ -19,12 +19,6 @@ module.exports = function(grunt) {
             + licenseForDetailsLine
             + " */";
 
-    var licenseBanner = "/*" + "\n"
-        + " <%= pkg.name %> <%= pkg.version %> Copyright (c) 2014 \"Richard KnG\" Richárd Szakács" + "\n"
-        + " Licensed under the MIT license." + "\n"
-        + " see: <%= pkg.homepage %> for details" + "\n"
-        + "*/";
-
     var src = "jquery.exists",
         uglifyjs_src = {};
 
