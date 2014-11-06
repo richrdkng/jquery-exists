@@ -1,7 +1,7 @@
 {
   "name": "jquery-exists",
   "description": "An AMD (Require.js) and browser compatible jQuery plugin to check more easily and better whether an element (or many) exists.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "homepage": "https://github.com/richard-kng/jquery-exists",
   "author": "Richard KnG <richrdkng@gmail.com> (https://github.com/richard-kng)",
   "repository": {

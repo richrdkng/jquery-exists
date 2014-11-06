@@ -1,5 +1,5 @@
 /*
- jquery.exists 1.0.1 Copyright (c) 2014 "Richard KnG" Richárd Szakács
+ jquery.exists 1.0.3 Copyright (c) 2014 "Richard KnG" Richárd Szakács
  Licensed under the MIT license.
  see: https://github.com/richard-kng/jquery-exists for details
 */
