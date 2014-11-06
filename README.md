@@ -22,12 +22,14 @@ __Download directly__ __(Do not link this directly on your site, the file is sen
 API & Usage
 -----------
 The jQuery-exists plugin provides __better__, __more defensive__ functionality, than just checking for __.length__, also more __flexible__ with the optional __parent__ argument.
+
 The optional __parent__ argument provides additional functionality to check, whether the element actually exists __within__ the provided __parent__ argument.
-The optional __parent__ argument must be __string__, a string containing a selector (jQuery selector) expression to match elements against. Native DOM elements and jQuery objects are not accepted.
+
+The optional __parent__ argument must be __string__, a selector (jQuery selector) expression to match elements against. Native DOM elements and jQuery objects __are not accepted__.
 
 | Function | Description | Example |
 | -------- | ----------- | ------- |
-| $("...").exists() | Check whether the element (or many) exists. The default value for the optional __parent__ argument is __"html"__, which simply means, the element (or many) must exist and appended to the DOM in order __.exists()__ to return __true__. | $("#headerMain").exists() |
+| $("...").exists() | Check whether the element (or many) exists.<br>The default value for the optional __parent__ argument is __"html"__, which simply means, the element (or many) must exist and appended to the DOM in order __.exists()__ to return __true__. | $("#headerMain").exists() |
 | $("...").exists("parent") | Check whether the element (or many) exists __and__ the element is __within__ the provided parent as a __string__ value. | $("#headerSub").exists("#header") |
 
 __In Browser (NPM)__
@@ -48,10 +50,11 @@ __In Browser (Require.js)__
         });
     </script>
 ```
-In case, you have some strange problems using jQuery with Require.js, try the following:
+In case, you have some strange problems using __jQuery with Require.js__, try the following:
  - install __Require.js__ using npm (__npm install requirejs__)
  - install __jQuery__ using npm (__npm install jquery__)
  - install __jQuery-exists__ using npm (__npm install jquery-exists__)
+
 After these steps, using Require.js __.config(...)__ function, additional setup is needed to use jQuery:
 ```javascript
 require.config({
@@ -75,7 +78,7 @@ And the final, __usable example__:
         });
     </script>
 ```
-In case you would like to use __paths__ to make the code more clear, __this is recommended__:
+In case you would like to use __paths__ to make the code more clear and readable, __this is recommended__:
 ```html
     <script>
         require.config({
