@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser (AMD) test for "jquery.exists" jQuery Plugin</title>
+
+    <link rel="shortcut icon" type="image/png"
+        href="../node_modules/grunt-contrib-jasmine/vendor/jasmine-2.0.1/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css"
+        href="../node_modules/grunt-contrib-jasmine/vendor/jasmine-2.0.1/jasmine.css">
+
+    <script type="text/javascript"
+        src="../node_modules/grunt-contrib-jasmine/vendor/jasmine-2.0.1/jasmine.js"></script>
+    <script type="text/javascript"
+        src="../node_modules/grunt-contrib-jasmine/vendor/jasmine-2.0.1/jasmine-html.js"></script>
+    <script type="text/javascript"
+        src="../node_modules/grunt-contrib-jasmine/vendor/jasmine-2.0.1/boot.js"></script>
+
+</head>
+<body>
+    <script src="../node_modules/requirejs/require.js"></script>
+    <script>
+        require.config({
+            baseUrl: "../",
+            paths: {
+                jquery: "node_modules/jquery/dist/jquery"
+            },
+            map: {
+                '*': {
+                    qulog: "node_modules/qulog/qulog",
+                    "jquery-exists": "src/jquery.exists"
+                }
+            }
+        });
+        require(["jquery", "qulog", "jquery-exists", "spec/jquery.exists.spec.js"], function() {});
+    </script>
+
+</body>
+</html>
