@@ -33,10 +33,11 @@ function messageArrayToGitMessageChain(messageArray) {
         len = messageArray.length;
 
     for(; i < len; ++i) {
-        chain += messageArray[i]+'\r\n';
+        //chain += messageArray[i]+'\r\n';
+        chain += messageArray[i]+String.fromCharCode(13);
     }
 
-    chain += '"';
+    chain = chain.substr(0, chain.length-1) + '"';
 
     return chain;
 }
