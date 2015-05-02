@@ -28,16 +28,13 @@ function messageArrayToMessageString(messageArray) {
     return messageArray.join('\n');
 }
 function messageArrayToGitMessageChain(messageArray) {
-    var chain = '-m "',
+    var chain = '',
         i = 0,
         len = messageArray.length;
 
     for(; i < len; ++i) {
-        //chain += messageArray[i]+'\r\n';
-        chain += messageArray[i]+String.fromCharCode(13);
+        chain += '-m "'+messageArray[i]+'" ';
     }
-
-    chain = chain.substr(0, chain.length-1) + '"';
 
     return chain;
 }
