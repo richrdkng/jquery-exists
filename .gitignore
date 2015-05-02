@@ -1,11 +1,10 @@
-# WebStorm directory
+# WebStorm folder
 .idea
 
-# Dependency directory
+# Dependency folder
 node_modules
 
-# Project notes
-PROJECT_NOTES
+# Repository credentials
+project/credentials.js
 
-# NPM Debug log
 npm-debug.log

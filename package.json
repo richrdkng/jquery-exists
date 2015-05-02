@@ -2,37 +2,34 @@
   "name": "jquery-exists",
   "description": "An AMD (Require.js) and browser compatible jQuery plugin to check more easily and better whether an element (or many) exists.",
   "version": "1.0.4",
-  "homepage": "https://github.com/richard-kng/jquery-exists",
-  "author": "Richard KnG <richrdkng@gmail.com> (https://github.com/richard-kng)",
+  "homepage": "https://github.com/richrdkng/jquery-exists",
+  "author": "Richard King <richrdkng@gmail.com> (https://github.com/richrdkng)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/richard-kng/jquery-exists.git"
+    "url": "https://github.com/richrdkng/jquery-exists.git"
   },
   "bugs": {
-    "url": "https://github.com/richard-kng/jquery-exists/issues"
+    "url": "https://github.com/richrdkng/jquery-exists/issues"
   },
   "license": "MIT",
   "main": "jquery.exists",
   "scripts": {
+    "gulp": "gulp --gulpfile task/index.js",
     "build": "npm install && grunt build",
     "test": "grunt --verbose"
   },
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "^1.11"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-banner": "~0.2.3",
-    "grunt-contrib-copy": "~0.7.0",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-jasmine": "~0.8.0",
-    "grunt-contrib-uglify": "~0.6.0",
-    "grunt-jasmine-node": "~0.2.1",
-    "grunt-template-jasmine-requirejs": "~0.2.0",
-    "jquery": "~2.1.1",
-    "qulog": "~1.0.3",
-    "requirejs": "~2.1.15"
+    "event-stream": "^3.3.0",
+    "gulp": "^3.8.11",
+    "gulp-clean": "^0.3.1",
+    "gulp-debug": "^2.0.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-prompt": "^0.1.2",
+    "readline-sync": "^1.2.14",
+    "semver": "^4.3.3"
   },
   "keywords": [
     "jquery",
