@@ -10,39 +10,33 @@ const   COMMIT_MESSAGE  = 1,
 input.setDefaultOptions({keepWhitespace: true});
 
 function isProperCommitMessageArray(messageArray) {
-    var isProper = false,
-        index;
-
-    log(Array.isArray(messageArray), messageArray.length);
+    var index;
 
     if(Array.isArray(messageArray) && messageArray.length > 0) {
         index = messageArray.length;
 
         while(--index >= 0) {
-            log(messageArray[index]);
-            log(typeof messageArray[index], messageArray[index].length);
             if(typeof messageArray[index] === 'string' && messageArray[index].length > 0) {
-                isProper = true;
-            } else {
-                isProper = false;
-                break;
+                return true;
             }
         }
     }
 
-    return isProper;
+    return false;
 }
 function messageArrayToMessageString(messageArray) {
     return messageArray.join('\n');
 }
 function messageArrayToGitMessageChain(messageArray) {
-    var chain = '',
+    var chain = '-m "',
         i = 0,
         len = messageArray.length;
 
     for(; i < len; ++i) {
-        chain += '-m "'+messageArray[i]+'" ';
+        chain += messageArray[i]+'\n';
     }
+
+    chain += '"';
 
     return chain;
 }
@@ -79,9 +73,9 @@ function promptCommitMessage(messageType) {
         log('(Warning, you didn\'t write any message!)');
     }
 
-    log('--------------------------------------------------');
+    log('------------------------------------------------------------------------');
     log(messageArrayToMessageString(messageArray));
-    log('--------------------------------------------------');
+    log('------------------------------------------------------------------------');
 
     log('[1] - Accept');
     log('[2] - Reenter');
