@@ -19,7 +19,7 @@
   "authors": [
     "Richard KnG <richrdkng@gmail.com> (https://github.com/richard-kng)"
   ],
-  "main": "jquery.exists",
+  "main": "jquery.exists.js",
   "ignore": [
     "lib",
     "node_modules",
