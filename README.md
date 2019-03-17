@@ -1,4 +1,4 @@
-jQuery-exists [![Build Status](https://travis-ci.org/richard-kng/jquery-exists.svg?branch=master)](https://travis-ci.org/richard-kng/jquery-exists)
+jQuery-exists [![Build Status](https://travis-ci.org/richard-kng/jquery-exists.svg?branch=master)](https://travis-ci.org/richard-kng/jquery-exists) [![Greenkeeper badge](https://badges.greenkeeper.io/richrdkng/jquery-exists.svg)](https://greenkeeper.io/)
 =============
 __An AMD (Require.js) and browser compatible jQuery plugin to check more easily and better whether an element (or many) exists.__
 
